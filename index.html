@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum Pointing Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Scrum Pointing Board</h1>
+        <div id="user-section">
+            <input type="text" id="username" placeholder="Enter your name">
+            <button onclick="setUser()">Join</button>
+        </div>
+        <div id="admin-section" style="display: none;">
+            <h2>Admin Section</h2>
+            <input type="text" id="task" placeholder="Enter task">
+            <button onclick="addTask()">Add Task</button>
+            <div id="task-list"></div>
+            <button onclick="revealPoints()" id="reveal-btn" style="display: none;">Reveal Points</button>
+        </div>
+        <div id="user-points-section" style="display: none;">
+            <h2>Tasks</h2>
+            <div id="tasks-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
